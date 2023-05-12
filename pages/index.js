@@ -15,11 +15,11 @@ export default function Home() {
       <Image className="mx-auto rounded-xl" src={whole}></Image>
     </div>
       <div className="py-20 text-center">
-        <h1 className="text-sedona-orange text-2xl font-extrabold">Welcome to Shore Thing Market</h1>
-        <h2 className="py-11 text-lg font-semibold">BPMe Visa Limited Time Offer!</h2>
-        <h3 className="px-10"> Receive 50 cents off per gallon for fiat 60 days of having the card. No limit combine with great cash back offers 5% cash back on inside purchases in any BP or Amoco store. Plus 3% cash back on grocery and dining purchases and 1 % cash back on all other purchases.</h3>
-        <h4 className="text-sm py-3">After the 60 days period .15 off per gallon</h4>
-        <button className="rounded-full text-sm px-2 py-1 bg-sedona-orange hover:bg-mountain-blue hover:scale-75"><a href="https://www.bp.com/en_us/united-states/home/products-and-services/bpme-rewards/bpme-rewards-visa.html" target={"_blank"}>Find Out More</a></button>
+        <h1 className="text-sedona-orange mb-4 text-4xl font-extrabold tracking-tight leading-none sm:text-3xl md:text-5xl xl:text-6xl ">Welcome to Shore Thing Market!</h1>
+        <h2 className="py-11 text-lg sm:text-sm xl:text-xl font-bold">BPMe Visa Limited Time Offer!</h2>
+        <h3 className="px-10 sm:text-sm xl:text-xl"> Receive 50 cents off per gallon for fiat 60 days of having the card. No limit combine with great cash back offers 5% cash back on inside purchases in any BP or Amoco store. Plus 3% cash back on grocery and dining purchases and 1 % cash back on all other purchases.</h3>
+        <h4 className= "text-sm py-3 lg:text-lg xl:text-lg">After the 60 days period .15 off per gallon</h4>
+        <button className="rounded-full text-sm lg:text-lg xl:text-xl px-2 py-1 bg-sedona-orange hover:bg-mountain-blue hover:scale-75"><a href="https://www.bp.com/en_us/united-states/home/products-and-services/bpme-rewards/bpme-rewards-visa.html" target={"_blank"}>Find Out More</a></button>
       </div>
     
    </section>
