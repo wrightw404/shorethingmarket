@@ -1,32 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
-// import cLogo from "../public/assets/logos/cLogo.png";
+import Logo from "../public/assets/photos/stm.jpeg";
 
 export default function Nav() {
   return (
     <div className="sticky top-0 w-full h-20 shadow-xl z-50">
       <div className="flex justify-between items-center w-full h-full px-2 2-xl:px-16">
-        {/* <a href="/">
+        <a href="/">
           <Image
-            src={cLogo}
+            src={Logo}
             alt="logo"
-            width="75"
-            height="75"
-            className="hover:scale-125"
+            width="90"
+            height="90"
+            className="hover:scale-75 rounded-xl pl-5"
           />
-        </a> */}
+        </a>
         <ul className="flex flex-wrap items-center justify-end text-xl">
-          <li className="px-3 text-dark-blue hover:text-electric-blue hover:scale-75">
+          <li className="px-3 text-dark-green hover:text-light-green hover:scale-75">
             <Link href="/">Home</Link>
           </li>
-          <li className="px-3 text-dark-blue hover:text-electric-blue hover:scale-75">
-            <Link href="/about">About</Link>
+          <li className="px-3 text-dark-green hover:text-light-green hover:scale-75">
+            <Link href="/about">Fuel</Link>
           </li>
-          <li className="px-3 text-dark-blue hover:text-electric-blue hover:scale-75">
-            <Link href="/projects">Projects</Link>
+          <li className="px-3 text-dark-green hover:text-light-green hover:scale-75">
+            <Link href="/projects">Products</Link>
           </li>
-          <li className="px-3 text-dark-blue hover:text-electric-blue hover:scale-75">
+          <li className="px-3 text-dark-green hover:text-light-green hover:scale-75">
             <Link href="/contact">Contact</Link>
+          </li>
+          <li className="px-3 text-dark-green hover:text-light-green hover:scale-75">
+            <Link href="/contact">Jobs</Link>
           </li>
         </ul>
       </div>
