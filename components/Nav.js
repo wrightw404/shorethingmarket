@@ -4,7 +4,7 @@ import Logo from "../public/assets/photos/stm.jpeg";
 
 export default function Nav() {
   return (
-    <div className="sticky top-0 w-full h-20 shadow-xl z-50">
+    <div className="sticky top-0 w-full h-20 shadow-lg shadow-dark-red z-50 font-semibold">
       <div className="flex justify-between items-center w-full h-full px-2 2-xl:px-16">
         <a href="/">
           <Image
