@@ -37,7 +37,7 @@ export default function Products() {
    <h3 className="px-10 sm:text-sm xl:text-xl"> From groceries to motor oil, we have it all!</h3>
   </div>
   <div className="slider-container">
-   <Carousel className="py-5 m-auto pl-11 content-center justify-center flex rounded-xl" width='50%' centerMode={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} showArrows={true} swipeable={true} dynamicHeight={true}>
+   <Carousel className="py-5 m-auto pl-11 content-center justify-center flex rounded-xl" width='50%' centerMode={true} showThumbs={false} autoPlay={true} stopOnHover={false} interval={3000} infiniteLoop={true} showArrows={true} swipeable={true} dynamicHeight={true}>
                 <div>
                     <Image src={alc} height='200' width='400'/>
                     <p className="legend">Legend 1</p>
