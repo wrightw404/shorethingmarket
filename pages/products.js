@@ -1,11 +1,30 @@
 import Nav from "../components/Nav.js"
 import Footer from "../components/Footer.js"
 import Image from "next/image.js";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import alc from "../public/assets/photos/liqour.jpg"
 import snack from "../public/assets/photos/snack.jpg"
 import dog from "../public/assets/photos/dogtreats.jpg"
 import ipa from "../public/assets/photos/ipa.jpg"
 import wine from "../public/assets/photos/wine.jpg"
+import beercave from "../public/assets/photos/beercave.jpg"
+import beercave2 from "../public/assets/photos/beercave2.jpg"
+import c4 from "../public/assets/photos/c4.jpg"
+import cap from "../public/assets/photos/cap.jpg"
+import coffee from "../public/assets/photos/coffee.jpg"
+import freal from "../public/assets/photos/freal.jpg"
+import ice from "../public/assets/photos/ice.jpg"
+import hat from "../public/assets/photos/hat.jpg"
+import otherbeer from "../public/assets/photos/otherbeer.jpg"
+import otherbeer2 from "../public/assets/photos/otherbeer2.jpg"
+import pastry from "../public/assets/photos/pastry.jpg"
+import stackbeer from "../public/assets/photos/stackbeer.jpg"
+import topo from "../public/assets/photos/topo.jpg"
+import wine2 from "../public/assets/photos/wine2.jpg"
+
+
+
 
 
 
@@ -13,58 +32,95 @@ export default function Products() {
   return (
     <section className= "bg-gradient-to-b from-mountain-blue to-white">
    <Nav />
-   <section className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex bg-cover">
-            <Image src={alc} className="rounded-xl bg-contain" alt="mockup"></Image>
-        </div>
-        <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-sedona-orange pl-10">We Have Liqour!</h1>
-            <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-white pl-10">Extensive collection of spirits</p>
-           
-        </div>       
-    </section>
-
-    <section className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-sedona-orange">Large Variety of Snacks</h1>
-            <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-white">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
-        </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex bg-cover">
-            <Image src={snack} className="rounded-xl bg-contain" alt="mockup"></Image>
-        </div>                
-    </section>
-
-    <section className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex bg-cover">
-            <Image src={ipa} className="rounded-xl bg-contain" alt="mockup"></Image>
-        </div>
-        <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-sedona-orange pl-10">Beer Cave and IPA's</h1>
-            <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl pl-10">Large selection of IPA's and Domestic beers</p> 
-        </div>       
-    </section>
-
-    <section className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-sedona-orange">Wine</h1>
-            <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p> 
-        </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex bg-cover">
-            <Image src={wine} className="rounded-xl bg-contain" alt="mockup"></Image>
-        </div>                
-    </section>
-
-    <section className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="hidden bg-contain lg:mt-0 lg:col-span-5 lg:flex">
-            <Image src={dog} className="rounded-xl bg-contain" alt="mockup"></Image>
-        </div>
-        <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-sedona-orange pl-10">We Have Everything You Need</h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl pl-10">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
+   <div className="py-11 text-center">
+   <h1 className="text-sedona-orange mb-4 text-4xl font-extrabold tracking-tight leading-none sm:text-3xl md:text-5xl xl:text-6xl ">We Gurantee We Have What You're Looking For</h1>
+   <h3 className="px-10 sm:text-sm xl:text-xl"> From groceries to motor oil, we have it all!</h3>
+  </div>
+  <div className="slider-container">
+   <Carousel className="py-5 m-auto pl-11 content-center justify-center flex rounded-xl" width='50%' centerMode={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} showArrows={true} swipeable={true} dynamicHeight={true}>
+                <div>
+                    <Image src={alc} height='200' width='400'/>
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <Image src={snack}  height='200' width='400' />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <Image src={coffee}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={freal}  height='200' width='400' />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={ice}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={beercave}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={beercave2}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={stackbeer}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={otherbeer}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={otherbeer2}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={topo}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={ipa}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={wine2}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={wine}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={c4}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={cap}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={pastry} height='200' width='400' />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={dog}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <Image src={hat}  height='200' width='400'/>
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
+            </div>
             
-        </div>       
-    </section>
 
+           
+
+    
 
 
   </section>
